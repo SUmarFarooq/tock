@@ -7,6 +7,7 @@ gunicorn==19.7.1
 whitenoise==3.2.1
 djangorestframework==3.4.6
 djangorestframework-csv==1.4.1
+django-settings-export==1.2.1
 bleach==1.4.3
 requests==2.18.4
 httmock==1.2.6

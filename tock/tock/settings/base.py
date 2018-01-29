@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import json
+# import json
 
 from django.utils.crypto import get_random_string
 
@@ -39,11 +39,12 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
 )
 
-TEMPLATES =  [
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/templates/'
-            ],
+        'DIRS': [
+            '/templates/'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -55,6 +56,7 @@ TEMPLATES =  [
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
+                'django_settings_export.settings_export',
             ],
         },
     },
