@@ -107,6 +107,5 @@ REST_FRAMEWORK = {
     ),
 }
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-
+PROJECT_ROOT = os.path.abspath(os.path.dirname('version.txt'))
 VERSION_FILE = open(os.path.join(PROJECT_ROOT, 'version.txt'))
