@@ -106,3 +106,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
 }
+
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
+VERSION_FILE = open(os.path.join(PROJECT_ROOT, 'version.txt'))
